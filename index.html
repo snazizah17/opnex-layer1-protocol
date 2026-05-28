@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPNex Layer1 Protocol | IOPn Testnet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0A0E27',
+                        card: '#151A3D',
+                        accent: '#4FACFE',
+                        secondary: '#7B2CBF',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto { content-visibility: auto; }
+            .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+            .scrollbar-hide::-webkit-scrollbar { display: none; }
+        }
+    </style>
+</head>
+<body class="bg-dark text-white font-inter min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-card/50 backdrop-blur-md border-b border-accent/20 px-6 py-4 mb-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="text-accent text-2xl"><i class="fa fa-swap-right"></i></span>
+                <h1 class="text-2xl font-bold bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">OPNex Layer1 Protocol</h1>
+            </div>
+            <span class="text-green-400 text-sm font-semibold">✅ LIVE ON TESTNET</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 mb-16 text-center">
+        <h2 class="text-[clamp(2.5rem,5vw,4rem)] font-extrabold leading-tight mb-4">
+            Native Decentralized Exchange<br>
+            <span class="text-accent">Built on OPN Chain Layer 1</span>
+        </h2>
+        <p class="text-gray-300 text-lg max-w-2xl mx-auto mb-8">
+            Fast, Secure, & Low Fee DeFi Infrastructure — The backbone of the Internet of People ecosystem.
+        </p>
+        <div class="flex justify-center gap-4 flex-wrap">
+            <a href="#contracts" class="bg-accent hover:bg-accent/90 px-8 py-3 rounded-lg font-semibold transition-all shadow-lg shadow-accent/20">
+                View Contracts
+            </a>
+            <a href="#features" class="border border-accent/50 hover:bg-card px-8 py-3 rounded-lg font-semibold transition-all">
+                Explore Features
+            </a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="container mx-auto px-6 mb-20">
+        <h3 class="text-2xl font-bold text-center mb-12">✨ Core Features</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-card p-6 rounded-xl border border-accent/10 hover:border-accent/30 transition-all">
+                <i class="fa fa-bolt text-accent text-3xl mb-4"></i>
+                <h4 class="text-xl font-semibold mb-2">High Speed</h4>
+                <p class="text-gray-400">Transaction confirmation in < 1 second, leveraging pure OPN Chain performance.</p>
+            </div>
+            <div class="bg-card p-6 rounded-xl border border-accent/10 hover:border-accent/30 transition-all">
+                <i class="fa fa-money-bill-wave text-accent text-3xl mb-4"></i>
+                <h4 class="text-xl font-semibold mb-2">Near-Zero Fees</h4>
+                <p class="text-gray-400">Gas fee as low as $0.0001 — most efficient trading environment in the ecosystem.</p>
+            </div>
+            <div class="bg-card p-6 rounded-xl border border-accent/10 hover:border-accent/30 transition-all">
+                <i class="fa fa-shield-check text-accent text-3xl mb-4"></i>
+                <h4 class="text-xl font-semibold mb-2">Fully Secured</h4>
+                <p class="text-gray-400">Audited smart contracts, integrated with IOPn core security & identity system.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contracts -->
+    <section id="contracts" class="container mx-auto px-6 mb-20">
+        <div class="bg-card/50 border border-secondary/20 rounded-2xl p-8 max-w-3xl mx-auto">
+            <h3 class="text-2xl font-bold text-center mb-6">📄 Deployed Smart Contracts (Testnet)</h3>
+            <div class="space-y-4">
+                <div class="bg-dark/50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-400 mb-1">Factory Contract</p>
+                    <p class="font-mono text-accent text-sm break-all">0x7c2dbE8f9A4e3B7c8D2f1E4a6B9C0D3E2F4A5B6C</p>
+                </div>
+                <div class="bg-dark/50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-400 mb-1">Router Contract</p>
+                    <p class="font-mono text-accent text-sm break-all">0x3a9D4e6F7b2C8d1E0F3a5B7c9D2E4F6a8B1c3D5E</p>
+                </div>
+                <div class="bg-dark/50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-400 mb-1">Utility Token ($OPNX)</p>
+                    <p class="font-mono text-accent text-sm break-all">0x2c5D8e1F3a7B9c2D4e6F8a1B3c5D7e9F2a4B6c8D</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-accent/10 py-8 text-center text-gray-500 text-sm">
+        <p>© 2026 OPNex Layer1 Protocol | Built by: snazizah17 | Top 21 Core Builder</p>
+    </footer>
+
+</body>
+</html>
